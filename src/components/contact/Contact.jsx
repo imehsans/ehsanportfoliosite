@@ -95,7 +95,9 @@ const Contact = () => {
 							<div className="w-full pb-6 mx-auto md:w-2/4 md:mx-0 sm:w-10/12 lg:w-1/3 rounded-xl bg-dark">
 								<div className="px-4 text-center md:px-6 lg:px-8">
 									<h1 className="font-anton py-4 text-[24px] md:text-[30px] text-primary">
-										I'm Ready to talk...
+										Sorry The portfolio site is underProcess Thats Why send
+										email on the given email or contact on the given Contact
+										Number the form data will be not receveable
 									</h1>
 								</div>
 								<hr className="border-light" />
