@@ -4,9 +4,72 @@ const workExp = () => {
 	var jobs = [
 		{
 			title: 'Frontend Developer',
+			'company-name': 'IKONIC Solutions',
+			'joining-date': 'March 1st, 2023',
+			'ends-Date': 'CURRENT',
+			address: {
+				street: 'I-9/3',
+				city: 'Islamabad',
+				country: 'Pakistan',
+				link: 'https://ikonicsolution.com/',
+			},
+			'working-time': '04:00PM to 1:00AM',
+			technologies: [
+				'HTML',
+				'CSS',
+				'Bootstrap',
+				'Tailwind CSS',
+				'SASS',
+				'JavaScript',
+				'JQuery',
+				'AJAX',
+				'ReactJS',
+				'ReduxJS',
+				'NextJS',
+				'Jira',
+				'GIT',
+				'...',
+			],
+			'company-type': 'IT Software Development',
+			desc: 'Working on different websites some of them from scratch and mostly working with live site and following XD and Figma designs and make all them with approximately Zero Error in UI and fully functional site using Javascript Libraries and Frameworks.',
+		},
+		{
+			title: 'Frontend Developer',
+			'company-name': 'Merik Solutions',
+			'joining-date': 'Jun 24th, 2022',
+			'ends-Date': 'Feb 27th,2023',
+			address: {
+				street: 'I-10/3',
+				city: 'Islamabad',
+				country: 'Pakistan',
+				link: 'https://meriksolutions.biz',
+			},
+			'working-time': '6:00PM to 3:00AM',
+			technologies: [
+				'HTML',
+				'CSS',
+				'Bootstrap',
+				'Tailwind CSS',
+				'SASS',
+				'JavaScript',
+				'JQuery',
+				'AJAX',
+				'ReactJS',
+				'ReduxJS',
+				'NextJS',
+				'JSON-Server',
+				'Jira',
+				'GIT',
+				'...',
+			],
+			'company-type': 'IT Software Development',
+			desc: 'Working on different websites some of them from scratch and mostly working with live site and following XD and Figma designs and make all them with approximately Zero Error in UI.',
+		},
+		{
+			title: 'Frontend Developer (PartTime)',
 			'company-name': 'Codistan Ventures',
-			'joining-date': '24/06/2022',
-			'ends-Date': 'Current',
+			'joining-date': 'Dec 1st, 2022',
+			'ends-Date': 'Dec 31st, 2022',
 			address: {
 				street: 'I-11/3',
 				city: 'Islamabad',
@@ -33,38 +96,9 @@ const workExp = () => {
 		},
 		{
 			title: 'Frontend Developer',
-			'company-name': 'Merik Solutions',
-			'joining-date': '24/06/2022',
-			'ends-Date': 'Current',
-			address: {
-				street: 'I-10/3',
-				city: 'Islamabad',
-				country: 'Pakistan',
-				link: 'https://meriksolutions.biz',
-			},
-			'working-time': '6:00PM to 3:00AM',
-			technologies: [
-				'HTML',
-				'CSS',
-				'Bootstrap',
-				'Tailwind CSS',
-				'SASS',
-				'JavaScript',
-				'JQuery',
-				'AJAX',
-				'ReactJS',
-				'ReduxJS',
-				'GIT',
-				'...',
-			],
-			'company-type': 'IT Software Development',
-			desc: 'Working on different websites some of them from scratch and mostly working with live site and following XD and Figma designs and make all them with approximately Zero Error in UI.',
-		},
-		{
-			title: 'Frontend Developer',
 			'company-name': 'Geeks Hub',
-			'joining-date': '15/01/2022',
-			'ends-Date': '20/06/2022',
+			'joining-date': 'Jan 1st, 2022',
+			'ends-Date': 'Jun 20th, 2022',
 			address: {
 				street: 'IT Park mzail Chock',
 				city: 'Abbottabad',
@@ -89,8 +123,8 @@ const workExp = () => {
 		{
 			title: 'Frontend Developer [INTERNEE]',
 			'company-name': 'Todds Group',
-			'joining-date': '15/09/2021',
-			'ends-Date': '10/12/2022',
+			'joining-date': 'July 1st, 2021',
+			'ends-Date': 'Dec 30th, 2021',
 			address: {
 				street: 'Pur-Gulab Street I',
 				city: 'Abbottabad',
@@ -118,13 +152,13 @@ const workExp = () => {
 			<h1 className="font-anton pt-8 text-[24px] md:text-[30px] text-primary">
 				Work Experience
 			</h1>
-			<ul className="flex flex-col justify-between overflow-auto flex-nowrap md:flex-row">
+			<ul className="flex  justify-between flex-wrap">
 				{jobs.map((job) => {
 					return (
 						<>
 							{job ? (
 								<li
-									className="min-w-[50%] px-2 py-3 text-left scale-90 bg-white shadow-xl hover:scale-100 max-auto md:min-w-96 rounded-xl md:px-4 hover:bg-dark hover:text-white"
+									className="companies-details min-w-[100%]  px-2 py-3 text-left scale-90 bg-white shadow-xl hover:scale-100 max-auto md:min-w-96 rounded-xl md:px-4 hover:bg-dark hover:text-white"
 									key={job?.id}
 								>
 									<div className="p-3">
@@ -144,7 +178,7 @@ const workExp = () => {
 										</div>
 
 										{job.address ? (
-											<div className="mb-3">
+											<div className="mb-3 hidden-data">
 												<h1>Company Address</h1>
 												<div>
 													{job?.address?.street ? (
@@ -182,14 +216,14 @@ const workExp = () => {
 											''
 										)}
 										{job['working-time'] ? (
-											<div className="mb-3">
+											<div className="mb-3 hidden-data">
 												<p>Working Time : {job?.['working-time']}</p>
 											</div>
 										) : (
 											''
 										)}
 										{job?.desc ? (
-											<div className="mb-3">
+											<div className="mb-3 hidden-data">
 												<h1>Description:</h1>
 												<p>{job?.desc}</p>
 											</div>
@@ -197,7 +231,7 @@ const workExp = () => {
 											''
 										)}
 										{job?.technologies ? (
-											<div className="mb-3">
+											<div className="mb-3 hidden-data">
 												<h1 className="mb-2">
 													Works On The Following Technologies:
 												</h1>

@@ -5,7 +5,7 @@ const Projects = () => {
 		{
 			name: 'Portfolio Site',
 			img3: '',
-			link: 'https://my-portfolio-frontend.netlify.app/',
+			link: 'https://ehsanportfoliosite.netlify.app/',
 			developedIn: ['HTML', 'CSS', 'Tailwind', 'JavaScript', 'ReactJs'],
 			detail:
 				'It was developed for a company as ReactJs developer Task, Its fully Responsive for each screen and according to the given design',

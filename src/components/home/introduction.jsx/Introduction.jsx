@@ -72,7 +72,7 @@ const Introduction = () => {
 							)}
 						</div>
 						{item?.imgLink ? (
-							<div className="order-1 w-48 h-48 mb-5 overflow-hidden scale-95 border-4 md:mb-0 rounded-xl md:rounded-full md:order-2 md:w-80 md:h-80 drop-shadow-md-xl shadow-dark md:drop-shadow-2xl bg-light border-secondary hover:border-8 hover:scale-100 ">
+							<div className="rounded-tl-[100%] rounded-bl-[100%] rounded-br-[50%] order-1 w-48 h-48 mb-5 overflow-hidden scale-95 md:border-4 border-l-8  border-b-8 border-t-8 md:mb-0 rounded-2xl md:rounded-full md:order-2 md:w-80 md:h-80 drop-shadow-md-xl shadow-dark md:drop-shadow-2xl bg-light border-secondary hover:border-l-12  hover:border-b-12 hover:border-t-12 md:hover:border-8 hover:scale-110 sm:scale-110 sm:hover:scale-125 md:hover:scale-110 ">
 								<img src={item?.imgLink} alt="" />
 							</div>
 						) : (

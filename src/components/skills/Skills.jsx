@@ -97,13 +97,13 @@ const Skills = () => {
 	]
 
 	return (
-		<div className="container px-4 pt-8 mx-auto text-center md:px-0 md:pt-16">
-			<h1 className="font-anton py-2 mb-5 text-[24px] md:text-[35px] text-dark">
+		<div className="container px-4 py-4 mx-auto text-center md:px-0 md:py-16">
+			<h1 className="font-anton py-2  text-[24px] md:text-[35px] text-dark">
 				Personal Skills
 			</h1>
 			<div>
 				<h1 className="font-semibold text-[20px] md:text-[24px] text-dark hover:text-primary text-start ">
-					<span className="mb-10"></span>
+					<span className="mb-0"></span>
 				</h1>
 				<div className="text-start">
 					{skills.map((skill) => {
@@ -112,18 +112,18 @@ const Skills = () => {
 								{skill?.Note.map((item) => {
 									return (
 										<div
-											className="flex items-center justify-around px-4 py-16 mt-8 md:mt-16 md:pt-16 md:bg-gradient-to-br to-secondary rounded-2xl via-primary from-dark"
+											className="flex items-center justify-around px-2 py-2 mt-2 md:py-16 md:mt-16 md:pt-16 md:bg-gradient-to-br to-secondary rounded-2xl via-primary from-dark"
 											key={item.id}
 										>
 											<div className="justify-center hidden w-1/2 md:flex">
 												<img
-													className="w-[300px] h-full shadow-2xl shadow-dark hover:scale-125 ease-in-out delay-300 rounded-b-2xl border-primary rounded-xl border-t-0 border-[20px] border-r-0 outline-1"
+													className="w-[300px] h-full shadow-2xl shadow-dark scale-110 hover:scale-125 ease-in-out delay-300 rounded-br-[50%] rounded-bl-[100%] rounded-tl-[100%] border-primary rounded-3xl border-t-0 border-[20px] border-r-0 outline-1 md:bg-gradient-to-br to-secondary  via-dark from-primary"
 													src={item?.img}
 													alt={item.title}
 												/>
 											</div>
-											<div className="w-3/4 mx-auto md:w-1/2">
-												<h1 className="font-anton  text-primary mb-3 text-center md:text-start  text-[24px] md:w-3/4 md:text-[30px] md:text-white">
+											<div className="w-full mx-auto md:w-1/2">
+												<h1 className="font-anton  text-primary  mb-1 md:mb-3  text-center md:text-start  text-[24px] md:w-3/4 md:text-[30px] md:text-white">
 													{item.title}
 												</h1>
 												<p className="w-full text-center text-dark md:w-3/4 md:text-white md:text-start">

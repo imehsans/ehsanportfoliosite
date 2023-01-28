@@ -6,7 +6,7 @@ import AboutMe from '../work/AboutMe'
 import Introduction from './introduction.jsx/Introduction'
 const Home = () => {
 	return (
-		<div>
+		<div className="divide-y-2">
 			<Introduction />
 			<Skills />
 			<Projects />

@@ -38,7 +38,7 @@ const Header = () => {
 	]
 	return (
 		<header>
-			<div className="px-4 py-2 font-bold text-light bg-gradient-to-tr from-primary via-dark to-secondary">
+			<div className="px-4 py-2 font-bold text-white bg-gradient-to-tr from-secondary via-dark to-primary">
 				<div className="container flex flex-wrap justify-between mx-auto">
 					<Link className="order-1" to="/">
 						<h1
